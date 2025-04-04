@@ -113,17 +113,16 @@
 }
 
 .input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.375rem;
+  @apply w-full px-4 py-2 mt-1 rounded-lg bg-white/10 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-all duration-300;
 }
 
 .btn {
-  background-color: #2563eb;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
+  @apply w-full py-3 mt-6 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 shadow-lg hover:scale-105 focus:ring-4 focus:ring-purple-300 text-white font-semibold transition-all duration-300;
+}
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1) inset !important;
+  -webkit-text-fill-color: #050505 !important;
 }
 
 @layer base {
